@@ -1,0 +1,53 @@
+main {
+  width: 1300px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+div {
+  max-height: calc(700px/2 - 8px);
+  border: 1.5px solid rgb(38, 45, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(23, 23, 86);
+}
+
+button {
+  margin-top: 20px;
+  width: 9vw;
+  height: 5vh;
+  color: rgb(43, 13, 62);
+  border-style: none;
+  background-color: rgb(156, 156, 161);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  width: 11vw;
+  height: 7vh;
+  cursor: pointer;
+}
+
+button:disabled {
+  display: none;
+}
+
+
+p {
+  background-color: rgb(132, 161, 103);
+  color: rgb(1, 14, 24);
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
